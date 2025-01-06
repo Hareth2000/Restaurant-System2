@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #15B392;
+    /* Darker shade */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+/* Form */
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 3px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #73EC8B;
+    /* Light gray background */
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    border-color: #5a6e74;
+    /* Darker border color */
+    background-color: #ffffff;
+    /* White background on focus */
+    box-shadow: 0 0 5px rgba(90, 110, 116, 0.3);
+}
+
+
+/* check box and radio style */
+fieldset {
+    border: 2px solid #4CAF50;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 15px;
+    font-size: 1em;
+    color: #333;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    accent-color: #4CAF50;
+}
+
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.6);
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+fieldset legend::after {
+    content: ':';
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+
+/* Footer */
+footer {
+    background-color: #15B392;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Cards Container */
+#cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Card */
+.card {
+    width: 280px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card p strong {
+    color: #333;
+}
+
+/* Style for the label */
+label {
+    font-size: 16px;
+    margin-right: 10px;
+    display: inline-block;
+    color: #333;
+}
+
+/* Style for radio button */
+input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Style for container */
+.gender-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Style the labels on hover */
+label:hover {
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Style the container for alignment */
+.container {
+    margin: 20px;
+}
